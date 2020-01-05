@@ -1,14 +1,14 @@
 import os
-from flask import flask
-app = flask(_name_)
+from flask import Flask
+app = Flask(__name__)
 
-@app.route("/");
+@app.route("/")
 def main():
-	retrun "Welcome!"
+	return "Welcome!"
 
-@app.route("/how are you");
-def hello
-	return "I am good, how about you?"
+@app.route("/how are you")
+def hello():
+	return 'I am good, how about you?'
 
-if _name_ == "_main_":
+if __name__ == "__main__":
 	app.run()
